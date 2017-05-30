@@ -18,7 +18,7 @@
 
 ## Installation du projet Laravel
 
-Dézippez le dossier `ProjetAssurance_Comem44.zip` dans le dossier `htdocs` de votre installation de **MAMP**.
+Dézippez le dossier `ProjetAssurance.zip` dans le dossier `htdocs` de votre installation de **MAMP**.
 
 > Pour trouver ce dossier `htdocs`, ouvrez **MAMP**, cliquez sur le bouton **Préférences**, puis l'onglet **Web Server** et le bouton **Open** (ou l'icône de **flèche vers la gauche**, si vous êtes sur Mac).
 
@@ -47,10 +47,10 @@ Pour cela :
 * Cliquer sur **Ouvrir la page de démarrage**
 * Cliquez sur **Outils > phpMyAdmin**
 * Cliquez sur **Nouvelle base de données** en haut de la colonne de gauche
-* Dans le champ **Nom de la base de données**, tapez `mdt_44`, puis cliquez sur **Créer**
-* Cliquez sur `mdt_44` dans la colonne de gauche
+* Dans le champ **Nom de la base de données**, tapez `mdt_assurance`, puis cliquez sur **Créer**
+* Cliquez sur `mdt_assurance` dans la colonne de gauche
 * Cliquez sur l'onglet **Importer**
-* Choisissez le fichier `dump_comem44.sql`, puis cliquez sur **Ouvrir**
+* Choisissez le fichier `dump_assurance.sql`, puis cliquez sur **Ouvrir**
 * Cliquez sur **Exécuter**
 	* > Il ne devrait y avoir aucune erreur.
 * (Re)démarrez le serveur Database
@@ -59,12 +59,12 @@ Pour cela :
 
 **Pour les utilisateurs Mac**
 * Ouvrez Sublime Text
-* Aller chercher le dossier `ProjetAssurance_Comem44` dans votre dossier `htdocs` et ouvrez-le
+* Aller chercher le dossier `ProjetAssurance` dans votre dossier `htdocs` et ouvrez-le
 * Dans la liste des fichiers de la colonne de gauche, cliquez sur le fichier `.env`
 * Modifier la valeur de la ligne `DB_PASSWORD=''` en `DB_PASSWORD=root` puis sauvez le fichier
 
 ** Pour les utilisateurs Windows**
-* Accéder au dossier `ProjetAssurance_Comem44` dans votre dossier `htdocs`
+* Accéder au dossier `ProjetAssurance` dans votre dossier `htdocs`
 * Ouvrez le fichier `.env`
 * Modifier la valeur de la ligne `DB_PASSWORD=''` en `DB_PASSWORD=root` puis sauvez le fichier
 
