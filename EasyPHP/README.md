@@ -50,7 +50,7 @@ Pour cela :
 
 Lorsque les extensions sont présentes et que la DB a été installée, vous pouvez tenter d'accéder au site.
 
-Démarrez vos serveurs HTTP et Database avec EasyPHP, si ce n'est pas déjà fait, puis accédez à l'URL http://127.0.0.1/ProjetAssurance_Comem44/public/.
+Démarrez vos serveurs HTTP et Database avec EasyPHP, si ce n'est pas déjà fait, puis accédez à l'URL http://127.0.0.1/ProjetAssurance/public/.
 
 Vous devriez voir la page d'accueil de l'application Assurance.
 Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tous les articles contenus dans la BD.
