@@ -76,7 +76,7 @@ Lorsque les extensions sont présentes et que la DB a été installée, vous pou
 * Cliquez sur le bouton **Préférences**
 * Cliquez sur l'onglet **Ports**
 * Cliquez sur le bouton **Ports par défaut de MAMP**
-* Accéder à l'URL http://localhost:8888/ProjetAssurance_Comem44/public/
+* Accéder à l'URL http://localhost:8888/ProjetAssurance/public/
 
 Vous devriez voir la page d'accueil de l'application Assurance.
 Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tous les articles contenus dans la BD.
