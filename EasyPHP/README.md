@@ -27,16 +27,19 @@ Vérifiez que les extensions suivantes sont bien activées pour PHP :
 
 Pour cela :
 
-1. Dans la page de config de EasyPHP, sélectionnez la version de PHP utilisée
-1. Cliquez sur **Configuration File**
-1. Cliquez sur l'icône en forme de crayon pour éditer le fichier
+1. Ouvrez le **Dashboard** de EasyPHP
+1. Cliquez sur l'icône d'engrenage sous **HTTP SERVER** 
+1. Dans le menu de droite, cliquez sur **PHP**
+1. Cliquez sur la version de PHP que vous utilisez (il faut que ce soit une version **supérieure à 7.1.3**)
+1. Cliquez sur le bouton **Configuration File**
+1. Cliquez sur l'icône en forme de crayon pour éditer le fichier (directement sur l'interface Web ou dans l'éditeur de texte qui s'ouvre ; selon votre configuration d'EasyPHP)
 1. `Ctrl+F` ou `Cmd+F` et cherchez les noms des extensions ci-dessus
 1. Si leur ligne commence par un `;`, supprimez ce caractère et sauver le fichier
-1. (Re)démarrez le serveur HTTP
+1. Retournez sur l'accueil du **Dashboard** et (re)démarrez le serveur HTTP
 
 ## Importation de la BD
 
-1. Sur la page **Home** de votre dashboard EasyPHP, ouvrez l'outil **phpMyAdmin**
+1. Sur la page **Home** de votre dashboard EasyPHP, ouvrez l'outil **phpMyAdmin** (sous la section **MODULES**) : il faut que HTTP SERVER et DATABASE SERVER soit en cours d'exécution
 1. Cliquez sur **Nouvelle base de données** en haut de la colonne de gauche
 1. Dans le champ **Nom de la base de données**, tapez `mdt_assurance`, puis cliquez sur **Créer**
 1. Cliquez sur `mdt_assurance` dans la colonne de gauche
@@ -44,8 +47,25 @@ Pour cela :
 1. Choisissez le fichier `dump_assurance.sql`, puis cliquez sur **Ouvrir**
 1. Cliquez sur **Exécuter**
 	* > Il ne devrait y avoir aucune erreur.
-1. (Re)démarrez le serveur Database
 
+## Modification de la config database
+
+**Pour les utilisateurs Mac**
+* Ouvrez Sublime Text, ou VS Code ou autre (peu importe, il faut que l'éditeur soit capable de voir les fichiers cachés)
+* Aller chercher le dossier `ProjetAssurance` dans votre dossier `htdocs` et ouvrez-le
+* Dans la liste des fichiers de la colonne de gauche, cliquez sur le fichier `.env`
+* Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
+
+**Pour les utilisateurs Windows**
+* Accéder au dossier `ProjetAssurance` dans votre dossier `htdocs`
+* Ouvrez le fichier `.env`
+* Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
+
+```js
+  DB_DATABASE=mdt_assurance
+  DB_USERNAME=root // Ou votre nom d'utilisateur personnel si vous en avez manuellement défini un
+  DB_PASSWORD= // Vide, donc, ou votre mot de passe personnel si vous en avez manuellement défini un
+```
 ## Accéder au site local
 
 Lorsque les extensions sont présentes et que la DB a été installée, vous pouvez tenter d'accéder au site.
@@ -60,10 +80,12 @@ Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tou
 
 1. Cherchez le programme `cmd` et ouvrez-le
 1. Tapez `where php`
-	* Si le résultat est un chemin (genre: `C:\MAMP\bin\php\php7.0.9\php.exe`): c'est tout bon !
+	* Si le résultat est un chemin (genre: `C:\chemin\quelconque\vers\fichier\php.exe`): c'est tout bon !
 	* Si le résultat est plutôt: `Information : impossible de trouver des fichiers pour le(s) modèle(s) spécifié(s).`, alors il faut modifier votre `PATH`.
 
 ## Modifier le PATH
+
+> Seulement pour les utilisateurs **Windows**
 
 ### Windows 8/10
 
@@ -76,7 +98,7 @@ Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tou
 1. Sélectionnez la nouvelle entrée **php** puis cliquez sur **Parcourir**
 1. Naviguer jusqu'au dossier où vous avez installé **EasyPHP**
 1. Naviguez ensuite dans **eds-binaries > php**
-1. Cliquez sur le dossier **php5619[blablabla]** puis cliquez sur **OK**
+1. Cliquez sur le dossier **php7[blablabla]** puis cliquez sur **OK**
 1. Cliquez sur **OK**
 1. Cliquez sur **OK**
 1. Cliquez sur **OK**
@@ -87,7 +109,7 @@ Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tou
 
 1. Naviguer jusqu'au dossier où vous avez installé **EasyPHP**
 1. Naviguez ensuite dans **eds-binaries > php**
-1. Ouvrez le dossier **php5619[blablabla]** puis copier le chemin complet vers ce dossier
+1. Ouvrez le dossier **php7[blablabla]** puis copier le chemin complet vers ce dossier
 1. Ouvrez le **panneau de configuration**
 1. Accédez à **Système et sécurité > Système**
 1. Cliquez sur **Paramètres système avancés**
@@ -101,4 +123,4 @@ Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tou
 1. Cliquez sur **OK**
 1. Cliquez sur **OK**
 1. Relancer le programme `cmd` puis retaper la commande `where php`
-1. Le résultat devrait maintenant être le chemin vers le dossier **php5619[blablabla]**
+1. Le résultat devrait maintenant être le chemin vers le dossier **php7[blablabla]**

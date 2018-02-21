@@ -70,8 +70,8 @@ Pour cela :
 
 ```js
   DB_DATABASE=mdt_assurance
-  DB_USERNAME=root //ou votre nom d'utilisateur personnel si vous en avez manuellement défini un
-  DB_PASSWORD=root //ou votre mot de passe personnel si vous en avez manuellement défini un
+  DB_USERNAME=root // Ou votre nom d'utilisateur personnel si vous en avez manuellement défini un
+  DB_PASSWORD=root // Ou votre mot de passe personnel si vous en avez manuellement défini un
 ```
 
 ## Accéder au site local
@@ -94,7 +94,7 @@ Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tou
 
 1. Cherchez le programme `cmd` et ouvrez-le
 1. Tapez `where php`
-	* Si le résultat est un chemin (genre: `C:\MAMP\bin\php\php7.0.9\php.exe`): c'est tout bon !
+	* Si le résultat est un chemin (genre: `C:\chemin\quelconque\vers\fichier\php.exe`): c'est tout bon !
 	* Si le résultat est plutôt: `Information : impossible de trouver des fichiers pour le(s) modèle(s) spécifié(s).`, alors il faut modifier votre `PATH`.
 
 ## Modifier le PATH
@@ -137,4 +137,4 @@ Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tou
 1. Cliquez sur **OK**
 1. Cliquez sur **OK**
 1. Relancer le programme `cmd` puis retaper la commande `where php`
-1. Le résultat devrait maintenant être le chemin vers le dossier **php5619[blablabla]**
+1. Le résultat devrait maintenant être le chemin vers le dossier **php7.1.x**
