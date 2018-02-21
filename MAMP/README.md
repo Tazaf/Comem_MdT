@@ -68,7 +68,7 @@ Pour cela :
 * Ouvrez le fichier `.env`
 * Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
 
-```
+```js
   DB_DATABASE=mdt_assurance
   DB_USERNAME=root //ou votre nom d'utilisateur personnel si vous en avez manuellement défini un
   DB_PASSWORD=root //ou votre mot de passe personnel si vous en avez manuellement défini un
