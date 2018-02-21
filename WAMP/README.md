@@ -17,7 +17,7 @@
 
 ## Installation du projet Laravel
 
-Dézippez le dossier `ProjetAssurance_Comem44.zip` dans le dossier `www` de votre installation de **WAMP**.
+Dézippez le dossier `ProjetAssurance.zip` dans le dossier `www` de votre installation de **WAMP**.
 
 > Pour trouver ce dossier, cliquer sur l'icône **WAMP** dans votre barre d'accès rapide, puis cliquez sur l'entrée **Répertoire www**
 
@@ -42,10 +42,10 @@ Pour cela :
 	* Utilisateur: `root`
 	* Mot de passe : _laissez vide_
 * Cliquez sur **Nouvelle base de données** en haut de la colonne de gauche
-* Dans le champ **Nom de la base de données**, tapez `mdt_44`, puis cliquez sur **Créer**
-* Cliquez sur `mdt_44` dans la colonne de gauche
+* Dans le champ **Nom de la base de données**, tapez `mdt_assurance`, puis cliquez sur **Créer**
+* Cliquez sur `mdt_assurance` dans la colonne de gauche
 * Cliquez sur l'onglet **Importer**
-* Choisissez le fichier `dump_comem44.sql`, puis cliquez sur **Ouvrir**
+* Choisissez le fichier `dump_assurance.sql`, puis cliquez sur **Ouvrir**
 * Cliquez sur **Exécuter**
 	* > Il ne devrait y avoir aucune erreur.
 * (Re)démarrez le serveur Database
@@ -56,7 +56,7 @@ Lorsque les extensions sont présentes et que la DB a été installée, vous pou
 
 * Ouvrez **WAMP**
 * Attendez que l'icône dans la barre d'accès rapide passe au vert
-* Accéder à l'URL http://localhost/ProjetAssurance_Comem44/public/
+* Accéder à l'URL http://localhost/ProjetAssurance/public/
 
 Vous devriez voir la page d'accueil de l'application Assurance.
 Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tous les articles contenus dans la BD.

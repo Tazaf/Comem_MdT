@@ -17,7 +17,7 @@
 
 ## Installation du projet Laravel
 
-Dézippez le dossier `ProjetAssurance_Comem44.zip` dans le dossier `eds_www` de votre installation de **EasyPHP**.
+Dézippez le dossier `ProjetAssurance.zip` dans le dossier `eds_www` de votre installation de **EasyPHP**.
 
 ## Vérification d'extensions
 
@@ -38,10 +38,10 @@ Pour cela :
 
 1. Sur la page **Home** de votre dashboard EasyPHP, ouvrez l'outil **phpMyAdmin**
 1. Cliquez sur **Nouvelle base de données** en haut de la colonne de gauche
-1. Dans le champ **Nom de la base de données**, tapez `mdt_44`, puis cliquez sur **Créer**
-1. Cliquez sur `mdt_44` dans la colonne de gauche
+1. Dans le champ **Nom de la base de données**, tapez `mdt_assurance`, puis cliquez sur **Créer**
+1. Cliquez sur `mdt_assurance` dans la colonne de gauche
 1. Cliquez sur l'onglet **Importer**
-1. Choisissez le fichier `dump_comem44.sql`, puis cliquez sur **Ouvrir**
+1. Choisissez le fichier `dump_assurance.sql`, puis cliquez sur **Ouvrir**
 1. Cliquez sur **Exécuter**
 	* > Il ne devrait y avoir aucune erreur.
 1. (Re)démarrez le serveur Database
@@ -50,7 +50,7 @@ Pour cela :
 
 Lorsque les extensions sont présentes et que la DB a été installée, vous pouvez tenter d'accéder au site.
 
-Démarrez vos serveurs HTTP et Database avec EasyPHP, si ce n'est pas déjà fait, puis accédez à l'URL http://127.0.0.1/ProjetAssurance_Comem44/public/.
+Démarrez vos serveurs HTTP et Database avec EasyPHP, si ce n'est pas déjà fait, puis accédez à l'URL http://127.0.0.1/ProjetAssurance/public/.
 
 Vous devriez voir la page d'accueil de l'application Assurance.
 Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tous les articles contenus dans la BD.

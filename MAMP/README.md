@@ -59,7 +59,7 @@ Pour cela :
 
 **Pour les utilisateurs Mac**
 * Ouvrez Sublime Text, ou VS Code ou autre (peu importe, il faut que l'éditeur soit capable de voir les fichiers cachés)
-* Aller chercher le dossier `ProjetAssurance_Comem44` dans votre dossier `htdocs` et ouvrez-le dans l'éditeur
+* Aller chercher le dossier `ProjetAssurance` dans votre dossier `htdocs` et ouvrez-le
 * Dans la liste des fichiers de la colonne de gauche, cliquez sur le fichier `.env`
 * Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
 
