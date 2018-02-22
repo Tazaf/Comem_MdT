@@ -30,7 +30,7 @@ Pour cela :
 1. Ouvrez le **Dashboard** de EasyPHP
 1. Cliquez sur l'icône d'engrenage sous **HTTP SERVER** 
 1. Dans le menu de droite, cliquez sur **PHP**
-1. Cliquez sur la version de PHP que vous utilisez (il faut que ce soit une version **supérieure à 7.1.3**)
+1. Cliquez sur la version de PHP que vous utilisez (il faut que ce soit une version **supérieure ou égale à 7.1.3**)
 1. Cliquez sur le bouton **Configuration File**
 1. Cliquez sur l'icône en forme de crayon pour éditer le fichier (directement sur l'interface Web ou dans l'éditeur de texte qui s'ouvre ; selon votre configuration d'EasyPHP)
 1. `Ctrl+F` ou `Cmd+F` et cherchez les noms des extensions ci-dessus
