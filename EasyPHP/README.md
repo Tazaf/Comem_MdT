@@ -53,12 +53,12 @@ Pour cela :
 
 **Pour les utilisateurs Mac**
 1. Ouvrez Sublime Text, ou VS Code ou autre (peu importe, il faut que l'éditeur soit capable de voir les fichiers cachés)
-1. Ouvrez dans l'éditeur le dossier `ProjetAssurance` présent dans votre dossier `htdocs`
+1. Ouvrez dans l'éditeur le dossier `ProjetAssurance` présent dans votre dossier `eds_www`
 1. Dans la liste des fichiers de la colonne de gauche, cliquez sur le fichier `.env`
 1. Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
 
 **Pour les utilisateurs Windows**
-1. Accéder au dossier `ProjetAssurance` dans votre dossier `htdocs`
+1. Accéder au dossier `ProjetAssurance` dans votre dossier `eds_www`
 1. Ouvrez le fichier `.env` (avec n'importe quel éditeur de texte)
 1. Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
 
