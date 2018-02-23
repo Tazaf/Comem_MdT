@@ -1,4 +1,4 @@
-# WAMP
+# Wampserver
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -17,9 +17,9 @@
 
 ## Installation du projet Laravel
 
-Dézippez le dossier `ProjetAssurance.zip` _(téléchargeable depuis la page du cours sur Cyberlearn)_ dans le dossier `www` de votre installation de **WAMP**.
+Dézippez le dossier `ProjetAssurance.zip` _(téléchargeable depuis la page du cours sur Cyberlearn)_ dans le dossier `www` de votre installation de **Wampserver**.
 
-> Pour trouver ce dossier, cliquer sur l'icône **WAMP** dans votre barre d'accès rapide, puis cliquez sur l'entrée **Répertoire www**
+> Pour trouver ce dossier, cliquer sur l'icône **Wampserver** dans votre barre d'accès rapide, puis cliquez sur l'entrée **Répertoire www**
 
 ## Vérification d'extensions
 
@@ -29,19 +29,19 @@ Vérifiez que les extensions suivantes sont bien activées pour PHP :
 
 Pour cela :
 
-1. Cliquez sur l'icône **WAMP** dans votre barre d'accès rapide
+1. Cliquez sur l'icône **Wampserver** dans votre barre d'accès rapide
 1. Sélectionnez l'entrée **PHP > Version**
 1. Vérifiez bien que la version en cours d'utilisation (coche verte) est **supérieure ou égale à 7.1.3**
 	* > Si ce n'est pas le cas, cliquez sur la bonne version et attendez que Wampserver ait redémarré le service PHP
-1. Re-cliquez sur l'icône **WAMP** dans la barre d'accès rapide
+1. Re-cliquez sur l'icône **Wampserver** dans la barre d'accès rapide
 1. Sélectionnez l'entrée **PHP > Extensions PHP**
 1. Dans la liste qui s'affiche, vérifier que `php_openssl` et `php_pdo_mysql` possèdent bien une belle coche verte devant eux.
-1. Si ce n'est pas le cas, cliquez juste sur les entrées de la liste pour les activer. **WAMP** redémarrera à chaque activation.
+1. Si ce n'est pas le cas, cliquez juste sur les entrées de la liste pour les activer. **Wampserver** redémarrera à chaque activation.
 
 ## Importation de la BD
 
 1. (Récupérez le fichier `dump_assurance.sql` depuis la page du cours sur Cyberlearn)
-1. Cliquez sur l'icône **WAMP** dands votre barre d'accès rapide
+1. Cliquez sur l'icône **Wampserver** dands votre barre d'accès rapide
 1. Cliquez sur l'entrée **phpMyAdmin**
 1. Si vous avez laissé la config par défaut, connectez-vous avec :
 	* Utilisateur: `root`
@@ -116,7 +116,7 @@ Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tou
 
 ### Windows 7 et inférieurs
 
-1. Naviguer jusqu'au dossier où vous avez installé **WAMP**
+1. Naviguer jusqu'au dossier où vous avez installé **Wampserver**
 1. Naviguez ensuite dans **bin > php**
 1. Ouvrez le dernier dossier commencant par **php7.1.** puis copier le chemin complet vers ce dossier
 1. Ouvrez le **panneau de configuration**
