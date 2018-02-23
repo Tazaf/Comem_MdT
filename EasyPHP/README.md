@@ -17,7 +17,7 @@
 
 ## Installation du projet Laravel
 
-Dézippez le dossier `ProjetAssurance.zip` dans le dossier `eds_www` de votre installation de **EasyPHP**.
+Dézippez le dossier `ProjetAssurance.zip` _(téléchargeable depuis la page du cours sur Cyberlearn)_ dans le dossier `eds_www` de votre installation de **EasyPHP**.
 
 ## Vérification d'extensions
 
