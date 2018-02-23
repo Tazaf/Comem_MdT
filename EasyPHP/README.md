@@ -29,7 +29,7 @@ Pour cela :
 
 1. Ouvrez le **Dashboard** de EasyPHP
 1. Cliquez sur l'icône d'engrenage sous **HTTP SERVER** 
-1. Dans le menu de droite, cliquez sur **PHP**
+1. Dans le menu de gauche, cliquez sur **PHP**
 1. Cliquez sur la version de PHP que vous utilisez (il faut que ce soit une version **supérieure ou égale à 7.1.3**)
 1. Cliquez sur le bouton **Configuration File**
 1. Cliquez sur l'icône en forme de crayon pour éditer le fichier (directement sur l'interface Web ou dans l'éditeur de texte qui s'ouvre ; selon votre configuration d'EasyPHP)
@@ -39,6 +39,7 @@ Pour cela :
 
 ## Importation de la BD
 
+1. (Récupérez le fichier `dump_assurance.sql` depuis Cyberlearn)
 1. Sur la page **Home** de votre dashboard EasyPHP, ouvrez l'outil **phpMyAdmin** (sous la section **MODULES**) : il faut que HTTP SERVER et DATABASE SERVER soit en cours d'exécution
 1. Cliquez sur **Nouvelle base de données** en haut de la colonne de gauche
 1. Dans le champ **Nom de la base de données**, tapez `mdt_assurance`, puis cliquez sur **Créer**
@@ -52,14 +53,16 @@ Pour cela :
 
 **Pour les utilisateurs Mac**
 * Ouvrez Sublime Text, ou VS Code ou autre (peu importe, il faut que l'éditeur soit capable de voir les fichiers cachés)
-* Aller chercher le dossier `ProjetAssurance` dans votre dossier `htdocs` et ouvrez-le
+* Ouvrez dans l'éditeur le dossier `ProjetAssurance` présent dans votre dossier `htdocs`
 * Dans la liste des fichiers de la colonne de gauche, cliquez sur le fichier `.env`
 * Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
 
 **Pour les utilisateurs Windows**
 * Accéder au dossier `ProjetAssurance` dans votre dossier `htdocs`
-* Ouvrez le fichier `.env`
+* Ouvrez le fichier `.env` (avec n'importe quel éditeur de texte)
 * Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
+
+**Attributs à vérifier**
 
 ```js
   DB_DATABASE=mdt_assurance
@@ -68,13 +71,13 @@ Pour cela :
 ```
 ## Accéder au site local
 
-Lorsque les extensions sont présentes et que la DB a été installée, vous pouvez tenter d'accéder au site.
+Lorsque les extensions PHP sont présentes et que la DB a été installée, vous pouvez tenter d'accéder au site.
 
 Démarrez vos serveurs HTTP et Database avec EasyPHP, si ce n'est pas déjà fait, puis accédez à l'URL http://127.0.0.1/ProjetAssurance/public/.
 
 Vous devriez voir la page d'accueil de l'application Assurance.
 Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tous les articles contenus dans la BD.
-> **Cliquer sur tous les autres blocs de la page d'accueil résultera en une `NotFoundHttpException`. C'est tout à fait normal.**
+> **Cliquer sur tous les autres blocs de la page d'accueil résultera en une `NotFoundHttpException` et donc la page 404 par défaut de Laravel 5.6 ; c'est tout à fait normal.**
 
 ## Ligne de commande : PHP
 
