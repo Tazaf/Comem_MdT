@@ -17,7 +17,7 @@
 
 ## Installation du projet Laravel
 
-Dézippez le dossier `ProjetAssurance.zip` dans le dossier `www` de votre installation de **WAMP**.
+Dézippez le dossier `ProjetAssurance.zip` _(téléchargeable depuis la page du cours sur Cyberlearn)_ dans le dossier `www` de votre installation de **WAMP**.
 
 > Pour trouver ce dossier, cliquer sur l'icône **WAMP** dans votre barre d'accès rapide, puis cliquez sur l'entrée **Répertoire www**
 
@@ -29,34 +29,59 @@ Vérifiez que les extensions suivantes sont bien activées pour PHP :
 
 Pour cela :
 
-* Cliquez sur l'icône **WAMP** dans votre barre d'accès rapide
-* Sélectionnez l'entrée **PHP > Extensions PHP**
-* Dans la liste qui s'affiche, vérifier que `php_openssl` et `php_pdo_mysql` possèdent bien une belle coche verte devant eux.
-* Si ce n'est pas le cas, cliquez juste sur les entrées de la liste pour les activer. **WAMP** redémarrera à chaque activation.
+1. Cliquez sur l'icône **WAMP** dans votre barre d'accès rapide
+1. Sélectionnez l'entrée **PHP > Version**
+1. Vérifiez bien que la version en cours d'utilisation (coche verte) est **supérieure ou égale à 7.1.3**
+	* > Si ce n'est pas le cas, cliquez sur la bonne version et attendez que Wampserver ait redémarré le service PHP
+1. Re-cliquez sur l'icône **WAMP** dans la barre d'accès rapide
+1. Sélectionnez l'entrée **PHP > Extensions PHP**
+1. Dans la liste qui s'affiche, vérifier que `php_openssl` et `php_pdo_mysql` possèdent bien une belle coche verte devant eux.
+1. Si ce n'est pas le cas, cliquez juste sur les entrées de la liste pour les activer. **WAMP** redémarrera à chaque activation.
 
 ## Importation de la BD
 
-* Cliquez sur l'icône **WAMP** dands votre barre d'accès rapide
-* Cliquez sur l'entrée **phpMyAdmin**
-* Si vous avez laissé la config par défaut, connectez-vous avec :
+1. (Récupérez le fichier `dump_assurance.sql` depuis la page du cours sur Cyberlearn)
+1. Cliquez sur l'icône **WAMP** dands votre barre d'accès rapide
+1. Cliquez sur l'entrée **phpMyAdmin**
+1. Si vous avez laissé la config par défaut, connectez-vous avec :
 	* Utilisateur: `root`
 	* Mot de passe : _laissez vide_
-* Cliquez sur **Nouvelle base de données** en haut de la colonne de gauche
-* Dans le champ **Nom de la base de données**, tapez `mdt_assurance`, puis cliquez sur **Créer**
-* Cliquez sur `mdt_assurance` dans la colonne de gauche
-* Cliquez sur l'onglet **Importer**
-* Choisissez le fichier `dump_assurance.sql`, puis cliquez sur **Ouvrir**
-* Cliquez sur **Exécuter**
+1. Cliquez sur **Nouvelle base de données** en haut de la colonne de gauche
+1. Dans le champ **Nom de la base de données**, tapez `mdt_assurance`, puis cliquez sur **Créer**
+1. Cliquez sur `mdt_assurance` dans la colonne de gauche
+1. Cliquez sur l'onglet **Importer**
+1. Choisissez le fichier `dump_assurance.sql`, puis cliquez sur **Ouvrir**
+1. Cliquez sur **Exécuter**
 	* > Il ne devrait y avoir aucune erreur.
-* (Re)démarrez le serveur Database
+
+## Modification de la config database
+
+**Pour les utilisateurs Mac**
+1. Ouvrez Sublime Text, ou VS Code ou autre (peu importe, il faut que l'éditeur soit capable de voir les fichiers cachés)
+1. Ouvrez dans l'éditeur le dossier `ProjetAssurance` présent dans votre dossier `www`
+1. Dans la liste des fichiers de la colonne de gauche, cliquez sur le fichier `.env`
+1. Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
+
+**Pour les utilisateurs Windows**
+1. Accéder au dossier `ProjetAssurance` dans votre dossier `www`
+1. Ouvrez le fichier `.env` (avec n'importe quel éditeur de texte)
+1. Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
+
+**Attributs à vérifier**
+
+```js
+  DB_DATABASE=mdt_assurance
+  DB_USERNAME=root // Ou votre nom d'utilisateur personnel si vous en avez manuellement défini un
+  DB_PASSWORD= // Vide, donc, ou votre mot de passe personnel si vous en avez manuellement défini un
+```
 
 ## Accéder au site local
 
 Lorsque les extensions sont présentes et que la DB a été installée, vous pouvez tenter d'accéder au site.
 
-* Ouvrez **WAMP**
-* Attendez que l'icône dans la barre d'accès rapide passe au vert
-* Accéder à l'URL http://localhost/ProjetAssurance/public/
+1. Démarrez **Wampserver**
+1. Attendez que l'icône dans la barre d'accès rapide passe au vert
+1. Accéder à l'URL http://localhost/ProjetAssurance/public/
 
 Vous devriez voir la page d'accueil de l'application Assurance.
 Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tous les articles contenus dans la BD.
@@ -66,7 +91,7 @@ Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tou
 
 1. Cherchez le programme `cmd` et ouvrez-le
 1. Tapez `where php`
-	* Si le résultat est un chemin (genre: `C:\MAMP\bin\php\php7.0.9\php.exe`): c'est tout bon !
+	* Si le résultat est un chemin (genre: `C:\chemin\quelconque\vers\fichier\php.exe`): c'est tout bon !
 	* Si le résultat est plutôt: `Information : impossible de trouver des fichiers pour le(s) modèle(s) spécifié(s).`, alors il faut modifier votre `PATH`.
 
 ## Modifier le PATH
@@ -80,9 +105,9 @@ Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tou
 1. Dans la nouvelle fenêtre, double-cliquez sur l'entrée **Path** du cadre **Variables systèmes**
 1. Dans la nouvelle fenêtre, cliquez sur le bouton **Nouveau** et tapez `php`, puis appuyer sur la touche `Enter`
 1. Sélectionnez la nouvelle entrée **php** puis cliquez sur **Parcourir**
-1. Naviguer jusqu'au dossier où vous avez installé **WAMP**
+1. Naviguer jusqu'au dossier où vous avez installé **Wampserver**
 1. Naviguez ensuite dans **bin > php**
-1. Cliquez sur le dernier dossier commencant par **php7.0.** puis cliquez sur **OK**
+1. Cliquez sur le dernier dossier commencant par **php7.1.** puis cliquez sur **OK**
 1. Cliquez sur **OK**
 1. Cliquez sur **OK**
 1. Cliquez sur **OK**
@@ -93,7 +118,7 @@ Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tou
 
 1. Naviguer jusqu'au dossier où vous avez installé **WAMP**
 1. Naviguez ensuite dans **bin > php**
-1. Ouvrez le dernier dossier commencant par **php7.0.** puis copier le chemin complet vers ce dossier
+1. Ouvrez le dernier dossier commencant par **php7.1.** puis copier le chemin complet vers ce dossier
 1. Ouvrez le **panneau de configuration**
 1. Accédez à **Système et sécurité > Système**
 1. Cliquez sur **Paramètres système avancés**
@@ -107,4 +132,4 @@ Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tou
 1. Cliquez sur **OK**
 1. Cliquez sur **OK**
 1. Relancer le programme `cmd` puis retaper la commande `where php`
-1. Le résultat devrait maintenant être le chemin vers le dossier **php5619[blablabla]**
+1. Le résultat devrait maintenant être le chemin vers le dossier du point 10.
