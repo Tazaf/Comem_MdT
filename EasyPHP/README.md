@@ -52,15 +52,15 @@ Pour cela :
 ## Modification de la config database
 
 **Pour les utilisateurs Mac**
-* Ouvrez Sublime Text, ou VS Code ou autre (peu importe, il faut que l'éditeur soit capable de voir les fichiers cachés)
-* Ouvrez dans l'éditeur le dossier `ProjetAssurance` présent dans votre dossier `htdocs`
-* Dans la liste des fichiers de la colonne de gauche, cliquez sur le fichier `.env`
-* Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
+1. Ouvrez Sublime Text, ou VS Code ou autre (peu importe, il faut que l'éditeur soit capable de voir les fichiers cachés)
+1. Ouvrez dans l'éditeur le dossier `ProjetAssurance` présent dans votre dossier `htdocs`
+1. Dans la liste des fichiers de la colonne de gauche, cliquez sur le fichier `.env`
+1. Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
 
 **Pour les utilisateurs Windows**
-* Accéder au dossier `ProjetAssurance` dans votre dossier `htdocs`
-* Ouvrez le fichier `.env` (avec n'importe quel éditeur de texte)
-* Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
+1. Accéder au dossier `ProjetAssurance` dans votre dossier `htdocs`
+1. Ouvrez le fichier `.env` (avec n'importe quel éditeur de texte)
+1. Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
 
 **Attributs à vérifier**
 
