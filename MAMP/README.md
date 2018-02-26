@@ -18,7 +18,7 @@
 
 ## Installation du projet Laravel
 
-Dézippez le dossier `ProjetAssurance.zip` dans le dossier `htdocs` de votre installation de **MAMP**.
+Dézippez le dossier `ProjetAssurance.zip` _(téléchargé depuis la page du cours de Cyberlearn)_ dans le dossier `htdocs` de votre installation de **MAMP**.
 
 > Pour trouver ce dossier `htdocs`, ouvrez **MAMP**, cliquez sur le bouton **Préférences**, puis l'onglet **Web Server** et le bouton **Open** (ou l'icône de **flèche vers la gauche**, si vous êtes sur Mac).
 
@@ -43,30 +43,31 @@ Pour cela :
 
 ## Importation de la BD
 
-* Ouvrez **MAMP** et démarrez les serveurs si ce n'est pas automatique
-* Cliquer sur **Ouvrir la page de démarrage**
-* Cliquez sur **Outils > phpMyAdmin**
-* (Si besoin, connectez-vous grâce à vos identifiants ou ceux par défaut : `root`/`root`)
-* Cliquez sur **Nouvelle base de données** en haut de la colonne de gauche
-* Dans le champ **Nom de la base de données**, tapez `mdt_assurance`, puis cliquez sur **Créer**
-* Cliquez sur `mdt_assurance` dans la colonne de gauche
-* Cliquez sur l'onglet **Importer**
-* Choisissez le fichier `dump_assurance.sql`, puis cliquez sur **Ouvrir**
-* Cliquez sur **Exécuter**
+1. (Téléchargez le fichier `dump_assurance.sql` depuis la page du cours sur Cyberlearn)
+1. Ouvrez **MAMP** et démarrez les serveurs si ce n'est pas automatique
+1. Cliquer sur **Ouvrir la page de démarrage**
+1. Cliquez sur **Outils > phpMyAdmin**
+1. (Si besoin, connectez-vous grâce à vos identifiants ou ceux par défaut : `root`/`root`)
+1. Cliquez sur **Nouvelle base de données** en haut de la colonne de gauche
+1. Dans le champ **Nom de la base de données**, tapez `mdt_assurance`, puis cliquez sur **Créer**
+1. Cliquez sur `mdt_assurance` dans la colonne de gauche
+1. Cliquez sur l'onglet **Importer**
+1. Choisissez le fichier `dump_assurance.sql`, puis cliquez sur **Ouvrir**
+1. Cliquez sur **Exécuter**
 	* > Il ne devrait y avoir aucune erreur.
 
 ## Modification de la config database
 
 **Pour les utilisateurs Mac**
-* Ouvrez Sublime Text, ou VS Code ou autre (peu importe, il faut que l'éditeur soit capable de voir les fichiers cachés)
-* Aller chercher le dossier `ProjetAssurance` dans votre dossier `htdocs` et ouvrez-le
-* Dans la liste des fichiers de la colonne de gauche, cliquez sur le fichier `.env`
-* Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
+1. Ouvrez Sublime Text, ou VS Code ou autre (peu importe, il faut que l'éditeur soit capable de voir les fichiers cachés)
+1. Aller chercher le dossier `ProjetAssurance` dans votre dossier `htdocs` et ouvrez-le
+1. Dans la liste des fichiers de la colonne de gauche, cliquez sur le fichier `.env`
+1. Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
 
 **Pour les utilisateurs Windows**
-* Accéder au dossier `ProjetAssurance` dans votre dossier `htdocs`
-* Ouvrez le fichier `.env`
-* Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
+1. Accéder au dossier `ProjetAssurance` dans votre dossier `htdocs`
+1. Ouvrez le fichier `.env`
+1. Vérifiez que les attributs ci-dessous ont bien les bonnes valeurs. Si ce n'est pas le cas, modifiez-les et sauver votre fichier.
 
 ```js
   DB_DATABASE=mdt_assurance
@@ -78,11 +79,11 @@ Pour cela :
 
 Lorsque les extensions sont présentes et que la DB a été installée, vous pouvez tenter d'accéder au site.
 
-* Ouvrez **MAMP**
-* Cliquez sur le bouton **Préférences**
-* Cliquez sur l'onglet **Ports**
-* Cliquez sur le bouton **Ports par défaut de MAMP**
-* Accéder à l'URL http://localhost/ProjetAssurance/public/
+1. Ouvrez **MAMP**
+1. Cliquez sur le bouton **Préférences**
+1. Cliquez sur l'onglet **Ports**
+1. Cliquez sur le bouton **Ports par défaut de MAMP**
+1. Accéder à l'URL http://localhost/ProjetAssurance/public/
 
 Vous devriez voir la page d'accueil de l'application Assurance.
 Cliquez sur les **Articles publicitaires** et vous devriez voir une liste de tous les articles contenus dans la BD.
